@@ -17,12 +17,14 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Configuración básica de CORS (para desarrollo)
+// CORS para desarrollo
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
     });
 });
 
