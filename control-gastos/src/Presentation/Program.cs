@@ -33,8 +33,12 @@ builder.Services.AddCors(options =>
     });
 });
 
+// === Servicios de Usuarios y Áreas ===
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+
+builder.Services.AddScoped<IAreaRepository, AreaRepository>();
+builder.Services.AddScoped<IAreaService, AreaService>();
 
 var app = builder.Build();
 
