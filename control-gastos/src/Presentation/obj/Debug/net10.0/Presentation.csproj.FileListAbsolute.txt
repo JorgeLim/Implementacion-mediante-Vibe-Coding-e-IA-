@@ -48,3 +48,6 @@ C:\Users\omarn\OneDrive\Escritorio\Nueva carpeta\Implementacion-mediante-Vibe-Co
 C:\Users\omarn\OneDrive\Escritorio\Nueva carpeta\Implementacion-mediante-Vibe-Coding-e-IA-\control-gastos\src\Presentation\obj\Debug\net10.0\Presentation.pdb
 C:\Users\omarn\OneDrive\Escritorio\Nueva carpeta\Implementacion-mediante-Vibe-Coding-e-IA-\control-gastos\src\Presentation\obj\Debug\net10.0\Presentation.genruntimeconfig.cache
 C:\Users\omarn\OneDrive\Escritorio\Nueva carpeta\Implementacion-mediante-Vibe-Coding-e-IA-\control-gastos\src\Presentation\obj\Debug\net10.0\ref\Presentation.dll
+C:\Users\omarn\OneDrive\Escritorio\Nueva carpeta\Implementacion-mediante-Vibe-Coding-e-IA-\control-gastos\src\Presentation\bin\Debug\net10.0\Presentation.staticwebassets.runtime.json
+C:\Users\omarn\OneDrive\Escritorio\Nueva carpeta\Implementacion-mediante-Vibe-Coding-e-IA-\control-gastos\src\Presentation\obj\Debug\net10.0\compressed\mv57hzgx7c-{0}-urmu7ue8hc-urmu7ue8hc.gz
+C:\Users\omarn\OneDrive\Escritorio\Nueva carpeta\Implementacion-mediante-Vibe-Coding-e-IA-\control-gastos\src\Presentation\obj\Debug\net10.0\compressed\iaw7g2uqae-{0}-whpw0h9jov-whpw0h9jov.gz

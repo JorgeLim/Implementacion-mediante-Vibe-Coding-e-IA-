@@ -46,13 +46,23 @@ builder.Services.AddScoped<IRolService, RolService>();
 builder.Services.AddScoped<ICentroCostoRepository, CentroCostoRepository>();
 builder.Services.AddScoped<ICentroCostoService, CentroCostoService>();
 
+builder.Services.AddScoped<IPresupuestoRepository, PresupuestoRepository>();
+builder.Services.AddScoped<IPresupuestoService, PresupuestoService>();
+
 var app = builder.Build();
+
+app.UseStaticFiles();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.InjectStylesheet("/swagger-ui/custom.css");
+        c.InjectJavascript("/swagger-ui/custom.js");
+        c.DocumentTitle = "Control Gastos API - Documentación Técnica";
+    });
 }
 
 app.UseHttpsRedirection();

@@ -1,0 +1,295 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif !important;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* ============================
+   LAYOUT
+   ============================ */
+#custom-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#custom-topbar {
+    height: 56px;
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.topbar-logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d2b7a;
+    letter-spacing: -0.3px;
+}
+
+.topbar-links a {
+    margin: 0 14px;
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+.topbar-links a.active {
+    color: #0d2b7a;
+    font-weight: 600;
+}
+
+.repo-btn {
+    background: #0d2b7a;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background 0.2s;
+}
+.repo-btn:hover { background: #1e3a8a; }
+
+#custom-main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* ============================
+   SIDEBAR
+   ============================ */
+#custom-sidebar {
+    width: 220px;
+    background: #f8fafc;
+    border-right: 1px solid #e2e8f0;
+    padding: 20px 0;
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+.sidebar-header {
+    padding: 0 20px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 8px;
+}
+.sidebar-header h2 {
+    margin: 0 0 2px;
+    font-size: 14px;
+    color: #0d2b7a;
+    font-weight: 700;
+}
+.sidebar-header span {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    cursor: pointer;
+}
+.sidebar-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #475569;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+    transition: all 0.15s;
+}
+.sidebar-menu li a:hover {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+.sidebar-menu li.active a {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border-left: 3px solid #1d4ed8;
+    font-weight: 600;
+}
+
+/* ============================
+   MAIN CONTENT
+   ============================ */
+#swagger-ui-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 28px 32px;
+    background-color: #fff;
+}
+
+/* Custom Search Bar */
+.custom-search {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+.custom-search input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+/* ============================
+   HIDE DEFAULT SWAGGER ELEMENTS
+   ============================ */
+.swagger-ui .topbar { display: none !important; }
+.swagger-ui .info { margin-bottom: 24px; }
+.swagger-ui .info .title {
+    color: #0d2b7a !important;
+    font-weight: 700;
+    font-size: 26px !important;
+}
+.swagger-ui .info .description { color: #64748b; font-size: 14px; }
+
+.swagger-ui .scheme-container {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-bottom: 16px !important;
+}
+
+/* ============================
+   ENDPOINT BLOCKS — Buttons only
+   ============================ */
+.swagger-ui .opblock {
+    border-radius: 6px !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: none !important;
+    margin-bottom: 8px !important;
+    background: #fff !important;
+    overflow: hidden !important;
+}
+
+/* Collapsed by default — show only summary row */
+/* opblock-body is intentionally NOT hidden so clicking expands details */
+
+.swagger-ui .opblock .opblock-summary {
+    padding: 0 !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    min-height: 44px !important;
+}
+
+/* HTTP Method badge */
+.swagger-ui .opblock-summary-method {
+    border-radius: 0 !important;
+    min-width: 80px !important;
+    height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    letter-spacing: 0.5px !important;
+    color: #fff !important;
+    flex-shrink: 0 !important;
+}
+
+/* Hide path and description from the row */
+.swagger-ui .opblock-summary-path,
+.swagger-ui .opblock-summary-description,
+.swagger-ui .opblock-summary-path__deprecated,
+.swagger-ui .view-line-link,
+.swagger-ui .opblock-control-arrow,
+.swagger-ui .opblock-summary-path-description-wrapper {
+    display: none !important;
+}
+
+/* Hover effect */
+.swagger-ui .opblock:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07) !important;
+    border-color: #94a3b8 !important;
+}
+
+/* GET */
+.swagger-ui .opblock-get .opblock-summary-method {
+    background: #2563eb !important;
+}
+.swagger-ui .opblock-get {
+    border-color: #bfdbfe !important;
+}
+
+/* POST */
+.swagger-ui .opblock-post .opblock-summary-method {
+    background: #16a34a !important;
+}
+.swagger-ui .opblock-post {
+    border-color: #bbf7d0 !important;
+}
+
+/* PUT */
+.swagger-ui .opblock-put .opblock-summary-method {
+    background: #d97706 !important;
+}
+.swagger-ui .opblock-put {
+    border-color: #fde68a !important;
+    background: #fffbeb !important;
+}
+
+/* DELETE */
+.swagger-ui .opblock-delete .opblock-summary-method {
+    background: #dc2626 !important;
+}
+.swagger-ui .opblock-delete {
+    border-color: #fca5a5 !important;
+}
+
+/* PATCH */
+.swagger-ui .opblock-patch .opblock-summary-method {
+    background: #7c3aed !important;
+}
+.swagger-ui .opblock-patch {
+    border-color: #ddd6fe !important;
+}
+
+/* Tag section headers */
+.swagger-ui .opblock-tag {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    padding: 16px 0 8px !important;
+    margin-bottom: 12px !important;
+}
+.swagger-ui .opblock-tag:hover {
+    background: transparent !important;
+}
+.swagger-ui .opblock-tag small {
+    color: #94a3b8 !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
