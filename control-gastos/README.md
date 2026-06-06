@@ -44,13 +44,13 @@ Application  ←  Infrastructure
 
 ## 📦 Módulos implementados
 
-| Módulo | Entidad | Endpoints |
-|---|---|---|
-| 👤 **Usuarios** | `Usuario` | `GET /api/v1/usuarios` · `GET /api/v1/usuarios/{id}` |
-| 🏢 **Áreas** | `Area` | `GET /api/v1/areas` · `GET /api/v1/areas/{id}` |
-| 🛡️ **Roles** | `Rol` | `GET /api/v1/roles` · `GET /api/v1/roles/{id}` |
-| 📊 **Centros de Costo** | `CentroCosto` | `GET /api/v1/centroscosto` · `GET /api/v1/centroscosto/{id}` |
-| 💰 **Presupuestos** | `Presupuesto` | `GET /api/v1/presupuestos` · `GET /api/v1/presupuestos/{id}` |
+| Módulo                      | Entidad         | Endpoints                                                         |
+| ---------------------------- | --------------- | ----------------------------------------------------------------- |
+| 👤**Usuarios**         | `Usuario`     | `GET /api/v1/usuarios` · `GET /api/v1/usuarios/{id}`         |
+| 🏢**Áreas**           | `Area`        | `GET /api/v1/areas` · `GET /api/v1/areas/{id}`               |
+| 🛡️**Roles**          | `Rol`         | `GET /api/v1/roles` · `GET /api/v1/roles/{id}`               |
+| 📊**Centros de Costo** | `CentroCosto` | `GET /api/v1/centroscosto` · `GET /api/v1/centroscosto/{id}` |
+| 💰**Presupuestos**     | `Presupuesto` | `GET /api/v1/presupuestos` · `GET /api/v1/presupuestos/{id}` |
 
 ---
 
@@ -167,13 +167,13 @@ El proyecto incluye una interfaz de documentación personalizada sobre Swagger U
 
 ## 🔧 Tecnologías usadas
 
-| Tecnología | Versión | Uso |
-|---|---|---|
-| ASP.NET Core | 10.0 | Framework principal de la API |
-| C# | 12 | Lenguaje de programación |
-| Swashbuckle (Swagger) | 6.5 | Documentación automática de la API |
-| Newtonsoft.Json | 8.0 | Serialización JSON |
-| Repositorio en memoria | — | Simulación de base de datos |
+| Tecnología            | Versión | Uso                                  |
+| ---------------------- | -------- | ------------------------------------ |
+| ASP.NET Core           | 10.0     | Framework principal de la API        |
+| C#                     | 12       | Lenguaje de programación            |
+| Swashbuckle (Swagger)  | 6.5      | Documentación automática de la API |
+| Newtonsoft.Json        | 8.0      | Serialización JSON                  |
+| Repositorio en memoria | —       | Simulación de base de datos         |
 
 ---
 
@@ -188,10 +188,13 @@ El proyecto incluye una interfaz de documentación personalizada sobre Swagger U
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
-**JorgeLim**  
-Proyecto desarrollado con asistencia de Inteligencia Artificial (Vibe Coding)  
+• Garcia Hernández Omar Jonathan
+• Pérez Hernández José Luis
+• Limón Jiménez Jorge Limón
+• Vázquez López Ismael
+Proyecto desarrollado con asistencia de Inteligencia Artificial (Vibe Coding)
 
 [![GitHub](https://img.shields.io/badge/GitHub-JorgeLim-181717?style=flat-square&logo=github)](https://github.com/JorgeLim)
 
