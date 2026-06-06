@@ -43,6 +43,9 @@ builder.Services.AddScoped<IAreaService, AreaService>();
 builder.Services.AddScoped<IRolRepository, RolRepository>();
 builder.Services.AddScoped<IRolService, RolService>();
 
+builder.Services.AddScoped<ICentroCostoRepository, CentroCostoRepository>();
+builder.Services.AddScoped<ICentroCostoService, CentroCostoService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
